@@ -11,3 +11,4 @@ hello('Amir');
 
 //invoking the function in the module
 console.log(myModule.add(2, 2));
+console.log(myModule.subtract(5, 4));
