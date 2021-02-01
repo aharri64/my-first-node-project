@@ -27,6 +27,7 @@
 //fs
 
 const fs = require('fs');
+const moment = require('moment');
 
 fs.readFile('nfl.txt', 'utf8', function (error, data) {
     if (error) {
@@ -35,3 +36,8 @@ fs.readFile('nfl.txt', 'utf8', function (error, data) {
         console.log(data);
     }
 })
+
+
+let myDate = moment('2021-02-01');
+let addOneWeek = myDate.add(1, 'week');
+console.log(myDate.format())
